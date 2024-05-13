@@ -24,11 +24,8 @@ const userSchema = new mongoose.Schema(
     role: {
       type: Number,
       default: 0,
-    },
-    image: {
-      type: String, // Assuming you're storing the image URL as a string
-      default: "default.jpg", // Default image URL
-    },
+    }
+   
   },
   { timestamps: true }
 );

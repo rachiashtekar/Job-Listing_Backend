@@ -14,7 +14,7 @@ const profileController = async (req, res) => {
       return res.status(404).send({ error: "User not found" });
     }
 
-    const { name, email, phone, image } = user;
+    const { name, email, phone } = user;
 
     // Call getUserJobs to get job listings for the user
     const jobListingsResponse = await getUserJobs(req);
@@ -27,7 +27,7 @@ const profileController = async (req, res) => {
     // Extract jobListings from the response
     const { jobListings } = jobListingsResponse;
 
-    res.status(200).json({ name, email, phone, image, jobListings });
+    res.status(200).json({ name, email, phone,  jobListings });
   } catch (error) {
     console.error("Error fetching user profile:", error);
     res.status(500).send({ error: "Internal Server Error" });
