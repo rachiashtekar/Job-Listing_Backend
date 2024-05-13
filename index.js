@@ -7,7 +7,7 @@ const AuthRoute = require('./Routes/AuthRoute');
 const jobRoute = require('./Routes/jobRoute');
 const profileRoute = require('./Routes/profileRoute');
 const cors = require('cors');
-const { getUserJobs } = require('../server/Controllers/JobControllers');
+const { getUserJobs } = require('./Controllers/JobControllers');
 
 const app = express();
 
