@@ -1,4 +1,4 @@
-const UserModel = require("../../server/Models/UserModel.js")
+const UserModel = require("./Models/UserModel.js")
 const JWT = require("jsonwebtoken");
 const { hashPassword, comparePassword } = require("../../server/helper/helper.js");
 const registerController = async (req, res) => {
