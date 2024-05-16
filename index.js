@@ -5,7 +5,7 @@ const dotenv = require('dotenv');
 const connectDB = require('./config/database');
 const AuthRoute = require('./Routes/AuthRoute');
 const jobRoute = require('./Routes/jobRoute');
-const profileRoute = require('./Routes/profileRoute');
+const profileRoute = require('./Routes/ProfileRoute');
 const cors = require('cors');
 const { getUserJobs } = require('./Controllers/JobControllers');
 
