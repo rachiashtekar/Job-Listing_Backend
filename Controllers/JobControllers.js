@@ -1,4 +1,4 @@
-const JobListing = require("../../server/Models/JobListingModel");
+const JobListing = require("../Models/JobListingModel");
 const jwt = require("jsonwebtoken");
 
 const addJob = async (req, res) => {

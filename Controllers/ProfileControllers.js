@@ -1,6 +1,6 @@
 const jwt = require("jsonwebtoken");
-const UserModel = require("../../server/Models/UserModel");
-const JobListing = require("../../server/Models/JobListingModel");
+const UserModel = require("../Models/UserModel");
+const JobListing = require("../Models/JobListingModel");
 
 const profileController = async (req, res) => {
   try {
